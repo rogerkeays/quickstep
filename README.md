@@ -1,6 +1,6 @@
 # Quickstep: A language for writing music.
 
-Quickstep is a structured text-based language for writing and transcribing music. It is also intended to assist memorisation by representing music structurally and using syntax that contains mnemonics. Each line in a *quickstep* score represents a unit of musical information, so the score can easily be used to [generate flashcards](https://github.com/rogerkeays/workout/blob/main/make-flashcards.kt).
+Quickstep is a structured text-based language for writing and transcribing music. It is also intended to assist memorisation by using syntax that contains mnemonics. Each line in a *quickstep* score represents a unit of musical information, so the score can easily be used to [generate flashcards](https://github.com/rogerkeays/workout/blob/main/make-flashcards.kt).
 
 Here is a simple example, Andantino from Suzuki Violin Book 1:
 
