@@ -1,6 +1,6 @@
 # Quickstep: A language for writing music.
 
-Quickstep is a text-based language for writing and transcribing music. It is also intended to assist memorisation by representing music structurally and using syntaxes that are also mnemonics. Each line in a *Quickstep* score represents a unit of musical information, so the score can easily be used to [generate flashcards](https://github.com/rogerkeays/workout/blob/main/make-flashcards.kt).
+Quickstep is a text-based language for writing and transcribing music. It is also intended to assist memorisation by representing music structurally and using syntax that contains mnemonics. Each line in a *quickstep* score represents a unit of musical information, so the score can easily be used to [generate flashcards](https://github.com/rogerkeays/workout/blob/main/make-flashcards.kt).
 
 Here is a simple example, Andantino from Suzuki Violin Book 1:
 
@@ -21,7 +21,7 @@ Here is a simple example, Andantino from Suzuki Violin Book 1:
 
 ## Structure
 
-Traditional music notation spells out every note more or less sequentially from start to end. This is not how music works. Music has a hierarchical structure, so *Quickstep* uses hierarchical notation:
+Traditional music notation spells out every note more or less sequentially from start to end. This is not how music works. Music has a hierarchical structure, so *quickstep* uses hierarchical notation:
 
     section : [section | phrase]+ : metre? : tempo? : tonic?
 
@@ -110,7 +110,7 @@ Vowels can be combined to add lengths, e.g `ai` for one and a half beats.
 
 ### Melody
 
-Melody is recorded using pitch numbers 0-9 and X and Y relative to the tonic. *Quickstep* does not distinguish between relative and absolute pitches because in music (as in life) *everything* is relative (except perhaps writing pitches in Hertz). A 'C' on a Bb trumpet is different to a 'C' on an Eb clarinet and a 'C' on a piano. You can say something like 'Concert C', but even that is relative to the standard A=440Hz.
+Melody is recorded using pitch numbers 0-9 and X and Y relative to the tonic. *quickstep* does not distinguish between relative and absolute pitches because in music (as in life) *everything* is relative (except perhaps writing pitches in Hertz). A 'C' on a Bb trumpet is different to a 'C' on an Eb clarinet and a 'C' on a piano. You can say something like 'Concert C', but even that is relative to the standard A=440Hz.
 
 `/` and `\` are used to indicate changes in the shape of the melody, going up or going down. This way we don't have to specify the octave number for each note. If a note is repeated there is no shape change. If you skip over an octave, use `//` or `\\`.
 
@@ -132,7 +132,7 @@ Each voice has it's own score, either in the same file or a separate file. You w
 
 ## Functions
 
-The idea of *Quickstep* is to compact music down to it's essence. Often that means doing transforms on basic motifs and themes. Rather than write all that out in full, we use functions to describe them. The basic syntax is
+The idea of *quickstep* is to compact music down to it's essence. Often that means doing transforms on basic motifs and themes. Rather than write all that out in full, we use functions to describe them. The basic syntax is
 
     (phrase function? parameters?)
 
